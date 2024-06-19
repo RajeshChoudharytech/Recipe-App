@@ -3,8 +3,8 @@ import os
 from flask import Flask
 from flask_login import LoginManager
 
-from .db import db
-from .routes import recipe_blueprint
+from db import db
+from routes import recipe_blueprint
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'default_secret_key')

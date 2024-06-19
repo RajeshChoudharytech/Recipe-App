@@ -5,9 +5,9 @@ from flask_login import current_user, login_required, login_user
 from sqlalchemy import or_
 from werkzeug.security import check_password_hash
 
-from .db import db
-from .models import Recipe, User
-from .schema import RecipeSchema, UserSchema
+from db import db
+from models import Recipe, User
+from schema import RecipeSchema, UserSchema
 
 # Create a Blueprint instance
 recipe_blueprint = Blueprint('recipe', __name__)
